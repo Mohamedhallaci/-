@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم ومقهى الجزائر التقليدي</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- إضافة خط عربي -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="logo">مطعم الجزائر</div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#menu">القائمة</a></li>
+            <li><a href="#about">عن المطعم</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- قسم الواجهة -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>أطباق جزائرية أصيلة</h1>
+            <p>نكهات من التراث الجزائري بين يديك</p>
+            <a href="#menu" class="btn">اطلب الآن</a>
+        </div>
+    </header>
+
+    <!-- القائمة -->
+    <section id="menu" class="menu">
+        <h2 class="section-title">قائمتنا</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">الكل</button>
+            <button class="category-btn" data-category="main">أطباق رئيسية</button>
+            <button class="category-btn" data-category="dessert">حلويات</button>
+            <button class="category-btn" data-category="drinks">مشروبات</button>
+        </div>
+
+        <div class="menu-items">
+            <!-- أطباق رئيسية -->
+            <div class="menu-item" data-category="main">
+                <img src="images/couscous.jpg" alt="كسكسي جزائري">
+                <h3>كسكسي بالخضروات</h3>
+                <p>طبق تقليدي معروف بتنوع مكوناته</p>
+                <span>350 دج</span>
+            </div>
+
+            <!-- حلويات -->
+            <div class="menu-item" data-category="dessert">
+                <img src="images/baklava.jpg" alt="بقلاوة جزائرية">
+                <h3>بقلاوة بالمكسرات</h3>
+                <p>حلاوة شرقية فاخرة</p>
+                <span>200 دج</span>
+            </div>
+
+            <!-- مشروبات -->
+            <div class="menu-item" data-category="drinks">
+                <img src="images/mint-tea.jpg" alt="شاي بالنعناع">
+                <h3>شاي جزائري بالنعناع</h3>
+                <p>نكهة منعشة مع النعناع الطازج</p>
+                <span>50 دج</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- عن المطعم -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">عن مطعمنا</h2>
+            <p>مطعم جزائري أصيل يقدم أطباقًا منزلية تعكس التنوع الثقافي للجزائر، باستخدام مكونات طازجة ووصفات عائلية توارثناها عبر الأجيال.</p>
+        </div>
+        <img src="images/restaurant.jpg" alt="صورة المطعم">
+    </section>
+
+    <!-- اتصل بنا -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">اتصل بنا</h2>
+        <form>
+            <input type="text" placeholder="الاسم" required>
+            <input type="tel" placeholder="رقم الهاتف" required>
+            <textarea placeholder="الرسالة"></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>&copy; 2024 مطعم الجزائر التقليدي. جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
