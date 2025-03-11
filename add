@@ -1,0 +1,24 @@
+// فلترة العناصر في القائمة
+document.querySelectorAll('.category-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        // إزالة الفئة النشطة من جميع الأزرار
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // إضافة الفئة النشطة للزر المحدد
+        button.classList.add('active');
+        
+        // الحصول على فئة الفلترة
+        const category = button.dataset.category;
+        
+        // عرض/إخفاء العناصر بناءً على الفئة
+        document.querySelectorAll('.menu-item').forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
